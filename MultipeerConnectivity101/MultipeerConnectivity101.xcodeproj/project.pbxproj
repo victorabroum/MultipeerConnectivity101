@@ -13,6 +13,7 @@
 		76555ED829CCDBF700FA0E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76555ED629CCDBF700FA0E55 /* Main.storyboard */; };
 		76555EDA29CCDBF900FA0E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76555ED929CCDBF900FA0E55 /* Assets.xcassets */; };
 		76555EDD29CCDBF900FA0E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */; };
+		766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29629CDCE0B006399BF /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		76555ED929CCDBF900FA0E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76555EDC29CCDBF900FA0E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76555EDE29CCDBF900FA0E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766CC29629CDCE0B006399BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		76555ECF29CCDBF700FA0E55 /* MultipeerConnectivity101 */ = {
 			isa = PBXGroup;
 			children = (
-				76555ED029CCDBF700FA0E55 /* AppDelegate.swift */,
-				76555ED229CCDBF700FA0E55 /* SceneDelegate.swift */,
-				76555ED429CCDBF700FA0E55 /* ViewController.swift */,
-				76555ED629CCDBF700FA0E55 /* Main.storyboard */,
+				766CC29329CCE711006399BF /* View */,
+				766CC29229CCE70B006399BF /* Controller */,
+				766CC29129CCE706006399BF /* Model */,
 				76555ED929CCDBF900FA0E55 /* Assets.xcassets */,
-				76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */,
 				76555EDE29CCDBF900FA0E55 /* Info.plist */,
 			);
 			path = MultipeerConnectivity101;
+			sourceTree = "<group>";
+		};
+		766CC29129CCE706006399BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		766CC29229CCE70B006399BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76555ED429CCDBF700FA0E55 /* ViewController.swift */,
+				76555ED029CCDBF700FA0E55 /* AppDelegate.swift */,
+				76555ED229CCDBF700FA0E55 /* SceneDelegate.swift */,
+				766CC29629CDCE0B006399BF /* MenuViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		766CC29329CCE711006399BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76555ED629CCDBF700FA0E55 /* Main.storyboard */,
+				76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				76555ED529CCDBF700FA0E55 /* ViewController.swift in Sources */,
 				76555ED129CCDBF700FA0E55 /* AppDelegate.swift in Sources */,
 				76555ED329CCDBF700FA0E55 /* SceneDelegate.swift in Sources */,
+				766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
