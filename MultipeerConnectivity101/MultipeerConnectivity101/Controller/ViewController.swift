@@ -24,6 +24,7 @@ class ViewController: UIViewController {
             let msg = Message(msg: inputTextField.text ?? "")
             let data = try JSONEncoder().encode(msg)
             MultipeerManager.shared.send(data)
+            changeText(msg.msg)
         }catch { }
     }
     

@@ -17,6 +17,7 @@ extension MenuViewController: MCBrowserViewControllerDelegate {
     }
     
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        self.setStartEnable(false)
         self.dismiss(animated: true)
     }
 }
