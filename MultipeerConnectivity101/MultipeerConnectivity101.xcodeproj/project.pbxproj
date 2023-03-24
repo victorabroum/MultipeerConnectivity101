@@ -14,6 +14,12 @@
 		76555EDA29CCDBF900FA0E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76555ED929CCDBF900FA0E55 /* Assets.xcassets */; };
 		76555EDD29CCDBF900FA0E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */; };
 		766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29629CDCE0B006399BF /* MenuViewController.swift */; };
+		766CC2A829CE1B21006399BF /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2A729CE1B21006399BF /* MultipeerManager.swift */; };
+		766CC2AB29CE210E006399BF /* MenuView+AdvertiserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2AA29CE210E006399BF /* MenuView+AdvertiserDelegate.swift */; };
+		766CC2AD29CE2495006399BF /* MenuView+BrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2AC29CE2495006399BF /* MenuView+BrowserDelegate.swift */; };
+		766CC2AF29CE2751006399BF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2AE29CE2751006399BF /* Message.swift */; };
+		766CC2B129CE281B006399BF /* MenuView+SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2B029CE281B006399BF /* MenuView+SessionDelegate.swift */; };
+		766CC2B329CE2D96006399BF /* ViewController+SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2B229CE2D95006399BF /* ViewController+SessionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		76555EDC29CCDBF900FA0E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76555EDE29CCDBF900FA0E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766CC29629CDCE0B006399BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		766CC2A729CE1B21006399BF /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		766CC2AA29CE210E006399BF /* MenuView+AdvertiserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+AdvertiserDelegate.swift"; sourceTree = "<group>"; };
+		766CC2AC29CE2495006399BF /* MenuView+BrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+BrowserDelegate.swift"; sourceTree = "<group>"; };
+		766CC2AE29CE2751006399BF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = MultipeerConnectivity101/Delegates/Message.swift; sourceTree = SOURCE_ROOT; };
+		766CC2B029CE281B006399BF /* MenuView+SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuView+SessionDelegate.swift"; sourceTree = "<group>"; };
+		766CC2B229CE2D95006399BF /* ViewController+SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SessionDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		76555ECF29CCDBF700FA0E55 /* MultipeerConnectivity101 */ = {
 			isa = PBXGroup;
 			children = (
+				766CC2A929CE20E8006399BF /* Delegates */,
+				766CC2A629CE1AFF006399BF /* Manager */,
 				766CC29329CCE711006399BF /* View */,
 				766CC29229CCE70B006399BF /* Controller */,
 				766CC29129CCE706006399BF /* Model */,
@@ -70,6 +84,7 @@
 		766CC29129CCE706006399BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				766CC2AE29CE2751006399BF /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +107,25 @@
 				76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		766CC2A629CE1AFF006399BF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				766CC2A729CE1B21006399BF /* MultipeerManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		766CC2A929CE20E8006399BF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				766CC2AA29CE210E006399BF /* MenuView+AdvertiserDelegate.swift */,
+				766CC2AC29CE2495006399BF /* MenuView+BrowserDelegate.swift */,
+				766CC2B029CE281B006399BF /* MenuView+SessionDelegate.swift */,
+				766CC2B229CE2D95006399BF /* ViewController+SessionDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +201,12 @@
 			files = (
 				76555ED529CCDBF700FA0E55 /* ViewController.swift in Sources */,
 				76555ED129CCDBF700FA0E55 /* AppDelegate.swift in Sources */,
+				766CC2A829CE1B21006399BF /* MultipeerManager.swift in Sources */,
+				766CC2AB29CE210E006399BF /* MenuView+AdvertiserDelegate.swift in Sources */,
+				766CC2B329CE2D96006399BF /* ViewController+SessionDelegate.swift in Sources */,
+				766CC2AD29CE2495006399BF /* MenuView+BrowserDelegate.swift in Sources */,
+				766CC2AF29CE2751006399BF /* Message.swift in Sources */,
+				766CC2B129CE281B006399BF /* MenuView+SessionDelegate.swift in Sources */,
 				76555ED329CCDBF700FA0E55 /* SceneDelegate.swift in Sources */,
 				766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */,
 			);
