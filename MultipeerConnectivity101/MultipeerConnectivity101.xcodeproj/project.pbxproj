@@ -14,6 +14,12 @@
 		76555EDA29CCDBF900FA0E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76555ED929CCDBF900FA0E55 /* Assets.xcassets */; };
 		76555EDD29CCDBF900FA0E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */; };
 		766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29629CDCE0B006399BF /* MenuViewController.swift */; };
+		766CC29A29CDDB7B006399BF /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29929CDDB7B006399BF /* MultipeerManager.swift */; };
+		766CC29D29CDE130006399BF /* MenuViewController+AdvertiserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29C29CDE130006399BF /* MenuViewController+AdvertiserDelegate.swift */; };
+		766CC29F29CDE3FD006399BF /* MenuViewController+BrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC29E29CDE3FD006399BF /* MenuViewController+BrowserDelegate.swift */; };
+		766CC2A129CDEBE1006399BF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2A029CDEBE1006399BF /* Message.swift */; };
+		766CC2A329CDECE0006399BF /* MenuViewController+SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2A229CDECE0006399BF /* MenuViewController+SessionDelegate.swift */; };
+		766CC2A529CDEF19006399BF /* ViewController+SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC2A429CDEF19006399BF /* ViewController+SessionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		76555EDC29CCDBF900FA0E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76555EDE29CCDBF900FA0E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766CC29629CDCE0B006399BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		766CC29929CDDB7B006399BF /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		766CC29C29CDE130006399BF /* MenuViewController+AdvertiserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+AdvertiserDelegate.swift"; sourceTree = "<group>"; };
+		766CC29E29CDE3FD006399BF /* MenuViewController+BrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+BrowserDelegate.swift"; sourceTree = "<group>"; };
+		766CC2A029CDEBE1006399BF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		766CC2A229CDECE0006399BF /* MenuViewController+SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+SessionDelegate.swift"; sourceTree = "<group>"; };
+		766CC2A429CDEF19006399BF /* ViewController+SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SessionDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		76555ECF29CCDBF700FA0E55 /* MultipeerConnectivity101 */ = {
 			isa = PBXGroup;
 			children = (
+				766CC29B29CDE116006399BF /* Delegates */,
+				766CC29829CDDB70006399BF /* Manager */,
 				766CC29329CCE711006399BF /* View */,
 				766CC29229CCE70B006399BF /* Controller */,
 				766CC29129CCE706006399BF /* Model */,
@@ -70,6 +84,7 @@
 		766CC29129CCE706006399BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				766CC2A029CDEBE1006399BF /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +107,25 @@
 				76555EDB29CCDBF900FA0E55 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		766CC29829CDDB70006399BF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				766CC29929CDDB7B006399BF /* MultipeerManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		766CC29B29CDE116006399BF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				766CC29C29CDE130006399BF /* MenuViewController+AdvertiserDelegate.swift */,
+				766CC29E29CDE3FD006399BF /* MenuViewController+BrowserDelegate.swift */,
+				766CC2A229CDECE0006399BF /* MenuViewController+SessionDelegate.swift */,
+				766CC2A429CDEF19006399BF /* ViewController+SessionDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766CC29F29CDE3FD006399BF /* MenuViewController+BrowserDelegate.swift in Sources */,
+				766CC2A329CDECE0006399BF /* MenuViewController+SessionDelegate.swift in Sources */,
 				76555ED529CCDBF700FA0E55 /* ViewController.swift in Sources */,
 				76555ED129CCDBF700FA0E55 /* AppDelegate.swift in Sources */,
+				766CC2A529CDEF19006399BF /* ViewController+SessionDelegate.swift in Sources */,
+				766CC29A29CDDB7B006399BF /* MultipeerManager.swift in Sources */,
 				76555ED329CCDBF700FA0E55 /* SceneDelegate.swift in Sources */,
+				766CC2A129CDEBE1006399BF /* Message.swift in Sources */,
 				766CC29729CDCE0B006399BF /* MenuViewController.swift in Sources */,
+				766CC29D29CDE130006399BF /* MenuViewController+AdvertiserDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
