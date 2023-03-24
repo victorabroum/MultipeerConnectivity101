@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        setStartEnable(false)
+        setStartEnable(false)
     }
     
     @IBAction func hostButtonClicked(_ sender: Any) {
